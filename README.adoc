@@ -1,0 +1,27 @@
+= geosparqllib
+
+A Python functions library for working with GeoSPARQL data.
+
+This Python library contains a series of functions for creating, using and otherwise working with GeoSPARQL RDF data.
+
+Common tasks handled by this library are:
+
+* creating GeoSPARQL data from other spatial data
+* ...
+
+== Installation
+
+This is a Python library created using https://python-poetry.org/[the Poetry dependency manager].
+
+== License
+
+https://opensource.org/license/BSD-3-clause[BSD- 3-Clause] (and https://purl.org/NET/rdflicense/BSD3.0[in RDF]).
+
+
+== Contact
+
+Developer:
+
+*Nicholas Car* +
+https://kurrawong.ai[KurrawongAI] +
+nick@kurrawong.ai
