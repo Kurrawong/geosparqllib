@@ -25,3 +25,15 @@ Developer:
 *Nicholas Car*  
 [KurrawongAI](https://kurrawong.ai)  
 <nick@kurrawong.ai>
+
+
+## Useful commands
+
+```
+~$ poetry run pytest
+~$ git commit -am "new version x.x.x"
+~$ git tag x.x.x
+~$ git push --tags
+~$ poetry build
+~$ poetry publish
+```
