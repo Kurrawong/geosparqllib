@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "geosparqlllib"
+name = "geosparqllib"
 version = "0.1.0"
 description = "A Python functions library for working with GeoSPARQL data"
 authors = ["Nicholas Car <nick@kurrawong.ai>"]
