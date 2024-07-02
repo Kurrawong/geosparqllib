@@ -49,8 +49,20 @@ j = """
     }
     """
 f = "http://example.com/f/1"
-geom = make_geometry(f, j)
+geom, bn = make_geometry(f, j)
 print(geom.serialize(format="longturtle"))
+```
+returns:
+```
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+<http://example.com/f/1>
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POLYGON ((0 0, 1 0, 1 1, 0 1, 0 0))"^^geo:wktLiteral ;
+        ] ;
+.
 ```
 
 ## License
