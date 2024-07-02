@@ -11,7 +11,47 @@ Common tasks handled by this library are:
 
 ## Installation
 
-This is a Python library created using [the Poetry dependency manager](https://python-poetry.org/).
+This library is [available on PyPI](https://pypi.org/project/geosparqllib/) so can be installed using PIP:
+
+```
+pip install geosparqllib
+```
+
+or Poetry:
+
+```
+poetry add geosparqllib
+```
+
+## Use
+
+Here's an example of using the `make_geometry()` function:
+
+```python
+from geosparqllib import make_geometry
+
+j = """
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon", 
+        "coordinates": [
+          [ 
+            [0, 0], 
+            [1, 0], 
+            [1, 1], 
+            [0, 1], 
+            [0, 0] 
+          ]
+        ]
+      }
+    }
+    """
+f = "http://example.com/f/1"
+geom = make_geometry(f, j)
+print(geom.serialize(format="longturtle"))
+```
 
 ## License
 
@@ -27,7 +67,11 @@ Developer:
 <nick@kurrawong.ai>
 
 
-## Useful commands
+
+
+## Admin
+
+### Useful build commands
 
 ```
 ~$ poetry run pytest

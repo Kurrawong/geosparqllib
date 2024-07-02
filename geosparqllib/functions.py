@@ -6,7 +6,7 @@ from shapely import Point, Polygon, to_wkt, from_geojson
 
 def make_geometry(
         coordinates: Union[Point, Polygon, str],
-        feature_iri: Optional[URIRef] = None,
+        feature_iri: Optional[Union[URIRef, str]] = None,
         name: Optional[str] = None
 ) -> (Graph, BNode):
     """This function accepts coordinates in several forms, an optional Feature IRI and optional name and returns
@@ -14,7 +14,10 @@ def make_geometry(
     g = Graph()
     geom = BNode()
     if feature_iri is not None:
-        g.add((feature_iri, GEO.hasGeometry, geom))
+        if type(feature_iri) is str:
+            g.add((URIRef(feature_iri), GEO.hasGeometry, geom))
+        else:
+            g.add((feature_iri, GEO.hasGeometry, geom))
     g.add((geom, RDF.type, GEO.Geometry))
     wkt = None
     if type(coordinates) in [Point, Polygon]:
