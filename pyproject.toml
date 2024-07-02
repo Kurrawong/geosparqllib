@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "geosparqllib"
-version = "0.1.3"
+version = "0.1.4"
 description = "A Python functions library for working with GeoSPARQL data"
 authors = ["Nicholas Car <nick@kurrawong.ai>"]
 license = "BSD 3-clause"
 readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/Kurrawong/geosparqllib"
+Repository = "https://github.com/Kurrawong/geosparqllib.git"
 
 [tool.poetry.dependencies]
 python = "^3.11"

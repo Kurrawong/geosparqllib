@@ -2,6 +2,8 @@
 
 A Python functions library for working with GeoSPARQL data.
 
+Project home: <https://github.com/Kurrawong/geosparqllib/>
+
 This Python library contains a series of functions for creating, using and otherwise working with GeoSPARQL RDF data.
 
 Common tasks handled by this library are:
@@ -65,6 +67,10 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 .
 ```
 
+See further examples of use in this module's tests in its source code:
+
+* <https://github.com/Kurrawong/geosparqllib/tree/main/tests>
+
 ## License
 
 [BSD- 3-Clause](https://opensource.org/license/BSD-3-clause) (and [in RDF](https://purl.org/NET/rdflicense/BSD3.0)).
@@ -77,8 +83,6 @@ Developer:
 *Nicholas Car*  
 [KurrawongAI](https://kurrawong.ai)  
 <nick@kurrawong.ai>
-
-
 
 
 ## Admin
