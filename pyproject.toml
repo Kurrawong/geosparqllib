@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "geosparqllib"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python functions library for working with GeoSPARQL data"
 authors = ["Nicholas Car <nick@kurrawong.ai>"]
 license = "BSD 3-clause"
