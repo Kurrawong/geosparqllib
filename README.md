@@ -31,6 +31,7 @@ Developer:
 
 ```
 ~$ poetry run pytest
+# update version in pyproject.toml
 ~$ git commit -am "new version x.x.x"
 ~$ git tag x.x.x
 ~$ git push --tags
